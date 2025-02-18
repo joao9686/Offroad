@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offroad - Estética Automotiva</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Cabeçalho e Navegação -->
+  <header>
+    <nav>
+      
+      <a href="#home" class="logo">
+        <img src="src/img/logo.png" alt="Logo Offroad">
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Seção Hero -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Seu Carro Merece o Melhor</h1>
+      <p>Serviços premium de estética automotiva</p>
+      <button class="btn agendar-btn">Agendar Now</button>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section class="services" id="servicos">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="src/icons/car-wash.png" alt="Car wash">
+          <h3>Detailing Completo</h3>
+          <p>Limpeza interna e externa profunda com produtos premium</p>
+        </div>
+        <div class="service-card">
+          <img src="src/icons/polimento.png" alt="polimento">
+          <h3>Polimento e Cristalização</h3>
+          <p>Recuperação de pintura e proteção duradoura</p>
+        </div>
+        <div class="service-card">
+          <img src="src/icons/pelicula.png" alt="pelicula">
+          <h3>Peliculas Automotiva</h3>
+          <p>Aplicação de Peliculas Automotivas</p>
+        </div>
+        <div class="service-card">
+          <img src="src/icons/bancos.png" alt="bancos">
+          <h3>Higienização de bancos</h3>
+          <p>Lavagem e Higienização dos bancos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+  <section class="portfolio" id="portfolio">
+    <h2>Nossos Trabalhos</h2>
+    <div class="gallery">
+      <img src="src/img/lavagem.jpg" alt="Trabalho 1">
+      <img src="src/img/lavagem2.jpg" alt="Trabalho 2">
+      <img src="src/img/polimento.jpg" alt="Trabalho 3">
+      <img src="src/img/polimento2.jpg" alt="Trabalho 4">
+      <img src="src/img/bancos.jpg" alt="Trabalho 5">
+      <img src="src/img/bancos2.jpg" alt="Trabalho 6">
+      <img src="src/img/painel.jpg" alt="Trabalho 7">
+      <img src="src/img/painel2.jpg" alt="Trabalho 8">
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact" id="contato">
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2>Entre em Contato</h2>
+        <p><i class="fas fa-map-marker-alt"></i> Rua do Automóvel, 123 - Centro</p>
+        <p><i class="fas fa-phone"></i> (11) 9999-8888</p>
+        <p><i class="fas fa-envelope"></i> contato@offroad.com</p>
+        <h3>Horário de Funcionamento</h3>
+        <p>Seg-Sex: 8h às 18h</p>
+        <p>Sábado: 8h às 12h</p>
+      </div>
+      <form class="contact-form">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Telefone">
+        <textarea placeholder="Mensagem" rows="5" required></textarea>
+        <button class="btn">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="social">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; Todos os direitos reservados Offroad integração com jvdev</p>
+  </footer>
+
+  <!-- Modal de Agendamento -->
+  <div id="modal-agendamento" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Agendamento</h2>
+      <form id="form-agendamento">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <input type="date" required>
+        <input type="time" required>
+        <textarea placeholder="Serviço Desejado" required></textarea>
+        <button type="submit" class="btn">Agendar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Botão do WhatsApp -->
+  <a href="https://wa.me/5511999998888?text=Olá,%20gostaria%20de%20agendar%20um%20horário" class="whatsapp-button" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
